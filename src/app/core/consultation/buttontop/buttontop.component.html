@@ -1,0 +1,35 @@
+
+<div class="containers" fxLayout="row" fxLayoutAlign="start end" fxLayoutGap="50%">
+
+  <div fxLayout="row" class="buttons" fxLayoutAlign="space-evenly center" fxLayoutGap="3%">
+    <button (click)="addConsult()" class="md-fab1"  [disabled]="isButtonEnable" mat-mini-fab >
+      <mat-icon>add</mat-icon>
+    </button>
+
+    <button   class="md-fab2" [disabled]="isButtonEnable"  mat-mini-fab color="primary">
+      <mat-icon>save</mat-icon>
+    </button>
+
+    <button (click)="clearForm()" [disabled]="isButtonEnable" class="md-fab3"  mat-mini-fab color="primary">
+      <mat-icon>clear</mat-icon>
+    </button>
+
+    <button class="md-fab4"  mat-mini-fab color="primary">
+      <mat-icon>error_outline</mat-icon>
+    </button>
+
+    <button class="md-fab4" [disabled]="isButtonEnable" mat-mini-fab color="primary">
+      <mat-icon>done</mat-icon>
+    </button>
+
+    <button  class="md-fab4" disabled mat-mini-fab color="primary">
+      <mat-icon>print</mat-icon>
+    </button>
+
+    <button class="md-fab4"  disabled mat-mini-fab color="primary">
+      <mat-icon>cancel</mat-icon>
+    </button>
+
+  </div>
+</div>
+

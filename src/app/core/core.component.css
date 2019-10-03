@@ -1,0 +1,10 @@
+.container-fluid{
+  height: 100vh;
+}
+
+.sidebar{
+  height: 100%;
+  border-right: solid 2px #2874A6;
+  background-color: white;
+}
+

@@ -1,0 +1,69 @@
+
+<!--<nav class="navbar navbar-dark navbar-expand">-->
+<!--  <a class="navbar-brand">Angular.io Demo</a>-->
+<!--  <mat-toolbar color="primary">-->
+
+<!--    <mat-toolbar-row>-->
+
+<!--      <button mat-icon-button >-->
+<!--        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>-->
+<!--      </button>-->
+<!--      <h1>INFORMATION MANAGEMENT SYSTEM</h1>-->
+
+<!--&lt;!&ndash;      <div  fxLayout fxLayoutAlign="flex-end">&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <ul fxLayout fxLayoutGap="30px">&ndash;&gt;-->
+
+<!--&lt;!&ndash;          <li>&ndash;&gt;-->
+
+<!--      <div  fxLayout fxFlex="100" fxLayoutGap="50px" fxLayoutAlign="end end">-->
+<!--        <button mat-icon-button [matMenuTriggerFor]="auth">-->
+<!--              <mat-icon>person_outline</mat-icon>-->
+<!--            </button>-->
+<!--            <mat-menu #auth="matMenu">-->
+<!--              <button mat-menu-item >-->
+<!--                <mat-icon>exit_to_app</mat-icon>-->
+<!--                <span>Sign out</span>-->
+<!--              </button>-->
+<!--            </mat-menu>-->
+<!--      </div>-->
+<!--          </li>-->
+
+<!--        </ul>-->
+
+<!--      </div>-->
+
+<!--    </mat-toolbar-row>-->
+
+<!--  </mat-toolbar>-->
+<!--</nav>-->
+
+
+<!--<nav class="navbar navbar-dark navbar-expand">-->
+<!--  <a class="navbar-brand">Angular.io Demo</a>-->
+
+  <mat-toolbar color="primary">
+<!--    <mat-toolbar-row>-->
+      <button mat-icon-button (click)="showSideNav()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>INFORMATION MANAGEMENT SYSTEM</h1>
+      <div fxFlex fxLayout fxLayoutAlign="flex-end">
+        <ul fxLayout fxLayoutGap="30px">
+          <li>
+            <button mat-icon-button [matMenuTriggerFor]="auth">
+              <mat-icon>person_outline</mat-icon>
+            </button>
+            <mat-menu #auth="matMenu">
+              <button mat-menu-item >
+                <mat-icon>exit_to_app</mat-icon>
+                <span>Sign out</span>
+              </button>
+            </mat-menu>
+          </li>
+        </ul>
+      </div>
+<!--    </mat-toolbar-row>-->
+
+  </mat-toolbar>
+<!--</nav>-->

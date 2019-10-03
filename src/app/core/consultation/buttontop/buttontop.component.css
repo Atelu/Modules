@@ -1,0 +1,32 @@
+
+.md-fab1 {
+  line-height: 2.2rem;
+  min-width: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: #006699;
+}
+.md-fab2 {
+  line-height: 2.2rem;
+  min-width: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: #BF9B30;
+}
+.md-fab3 {
+  line-height: 2.2rem;
+  min-width: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background-color: rgb(105, 104, 102);
+}
+.md-fab4 {
+  line-height: 2.2rem;
+  min-width: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+}
