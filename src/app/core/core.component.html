@@ -1,17 +1,34 @@
 
-<div class="container-fluid"  >
-  <div class="row">
-<div class="col-12">
-  <app-banner (toggleSidenav)="showA()"></app-banner>
-</div>
-<div class="col-2 sidebar" *ngIf="showSidebar">
-<app-sidebar></app-sidebar>
-</div>
-<div class="col">
-<!--  <button mat-button (click)="showA()"  >Show A</button>-->
-<!--  <button mat-button (click)="showB()" >Show B</button>-->
+<!--  <div class="row">-->
+<!--    <div class="col-12">-->
+<!--      <app-banner  (toggleSidenav)="showA()"></app-banner>-->
+<!--    </div>-->
+<!--  </div>-->
 
-  <router-outlet></router-outlet>
-</div>
+<!--  <div class="row">-->
+
+<!--    <div class="col-2 sidebar">-->
+<!--      <app-sidebar *ngIf="showSidebar"></app-sidebar>-->
+<!--    </div>-->
+
+<!--    <div class="col">-->
+<!--      <router-outlet></router-outlet>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<div layout="row" flex>
+
+  <app-banner  (toggleSidenav)="showA()"></app-banner>
+
+  <div fxLayout="row" >
+    <div class="col-2 sidebar">
+      <app-sidebar  *ngIf="showSidebar"></app-sidebar>
+    </div>
+
+
+    <div class="col">
+    <router-outlet></router-outlet>
   </div>
+
+</div>
 </div>

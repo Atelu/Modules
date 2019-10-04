@@ -1,6 +1,10 @@
 .headtitle {
-  padding-left: 5%;
+  /*padding-left: 5%;*/
   font-size:40px;
   color: #006699;
-  margin-top: 2%;
+  padding-top: 1%;
 }
+:host{
+  width: 100% !important;
+}
+
