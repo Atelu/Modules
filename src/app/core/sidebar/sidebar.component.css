@@ -15,10 +15,12 @@
   position: relative;
   top: 0;
   left: 0;
-  height: 100vh;
   z-index: 999;
   color: #fff;
   transition: all 0.3s;
+  border-right: solid 2px #2874A6;
+  height: 90vh;
+
 }
 :host{
   width: 100% !important;

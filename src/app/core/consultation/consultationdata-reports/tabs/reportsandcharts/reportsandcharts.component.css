@@ -1,0 +1,16 @@
+
+.headtitles{
+  color: #006699;
+  font-size:14px;
+  text-align: left;
+  margin-top: 5%;
+  padding-left: 10%;
+}
+
+.headtitles .item:hover {
+  font-weight: bold;
+  color: gold;
+  cursor: pointer;
+
+
+}

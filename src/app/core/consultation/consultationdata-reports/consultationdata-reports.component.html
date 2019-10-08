@@ -1,0 +1,16 @@
+<mat-card class="mat-card" >
+  <mat-card-content>
+
+    <mat-tab-group [selectedIndex]="selectedIndex">
+
+      <mat-tab label= "Reports/Charts">
+        <app-reportsandcharts></app-reportsandcharts>
+      </mat-tab>
+
+      <mat-tab label= "Consultation Data">
+        <app-consultationdata  (selectedData)="onConsultData($event)" ></app-consultationdata>
+      </mat-tab>
+
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>

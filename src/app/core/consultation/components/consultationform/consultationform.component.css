@@ -1,0 +1,125 @@
+
+.mat-form-field {
+  font-size: 13px;
+}
+
+.term {
+  width: 10%;
+}
+
+.age {
+  width: 8%;
+  padding-left: 2%;
+}
+
+.gender {
+  width: 8%;
+  padding-left: 2%;
+}
+.height {
+  width: 8%;
+  padding-left: 2%;
+}
+.weight {
+  width: 8%;
+  padding-left: 2%;
+}
+.bmi {
+  width: 8%;
+  padding-left: 2%;
+}
+.bp {
+  width:8%;
+  padding-left: 2%;
+}
+.logo-icon {
+  line-height: 2.2rem;
+  min-width: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  margin-left: 1%;
+}
+.example-containers  {
+  background-color: #006699;
+  font-size: 12px;
+  text-align: center;
+  max-width: 6%;
+  max-height: 3%;
+  color: white;
+  padding: 5px 15px 0 6px;
+  margin: 6px 6px 6px 6px;
+}
+.search {
+  width: 8%;
+  padding-left: 2%;
+}
+
+.doc {
+  width: 10%;
+}
+
+.ward {
+  width: 12%;
+  padding-left: 2%;
+}
+.bed {
+  width: 10%;
+  padding-left: 2%;
+
+}
+
+.date {
+  width: 12%;
+  padding-left: 2%;
+}
+
+.review {
+  width: 8%;
+  padding-left: 2%;
+
+}
+.dates {
+  width: 12%;
+  padding-left: 2%;
+}
+.time {
+  width: 12%;
+  font-size: 14px;
+  padding-left: 2%;
+}
+
+
+.general {
+  width: 22%;
+  padding-left: 2%;
+
+}
+
+.example-container {
+  width: 15%;
+  padding-left: 2%;
+}
+.md-fab {
+  line-height: 2.2rem;
+  min-width: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  margin-left: 4%;
+
+}
+.md{
+  padding-left: 1%;
+}
+.name {
+  /*padding-left: 5%;*/
+  width: 20%;
+}
+
+.example-contain > * {
+  width: 100%;
+  margin-left: 10%;
+  padding-left: 10%;
+
+}

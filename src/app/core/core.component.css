@@ -1,6 +1,4 @@
-.container-fluid{
-  height: 100vh;
-}
+
 
 :host {
   width: 100% !important;
@@ -9,9 +7,6 @@
   height: 100%;
   border-right: solid 2px #2874A6;
   background-color: white;
-  /*margin-outside: 40%;*/
 }
 
-div.full{
-  width:auto;
-}
+

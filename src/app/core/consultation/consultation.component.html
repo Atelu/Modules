@@ -1,10 +1,26 @@
-
-<div class="container" fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="45%">
-  <div fxFlex="30%" fxLayoutAlign="start start"  fxLayoutGap="50%">
+<div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="55%">
+  <div fxFlex="30%" fxLayoutAlign="start start" fxLayoutGap="50%">
     <div class="headtitle">
       <span>Consultation </span>
     </div>
   </div>
-<app-buttontop></app-buttontop>
+  <app-buttontop (buttonCleared)="onButtonCleared($event)" (buttonSelected)="onButtonSelected($event)"></app-buttontop>
+</div>
+<br>
+<app-consultationform  ></app-consultationform>
+<br>
+  <div class="row">
 
+    <div class="col-3">
+  <app-patientlist  (selected)="onPatientSelected($event)" ></app-patientlist>
+    </div>
+    <div class="col-6">
+
+  <app-patientinfo></app-patientinfo>
+    </div>
+<div class="col-3">
+
+  <app-consultationdata-reports ></app-consultationdata-reports>
+
+</div>
 </div>

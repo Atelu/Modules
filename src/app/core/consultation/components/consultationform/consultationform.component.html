@@ -1,0 +1,95 @@
+<form [formGroup]="consultationForm" (ngSubmit)="submitForm()">
+
+  <mat-form-field class="term">
+    <input matInput placeholder="Name" formControlName="name"/>
+  </mat-form-field>
+
+  <mat-form-field class="age">
+    <input matInput placeholder="Age" type="number" formControlName="age"/>
+  </mat-form-field>
+
+  <mat-form-field class="gender">
+    <input matInput placeholder="Gender" type="text" formControlName="gender"/>
+  </mat-form-field>
+
+  <mat-form-field class="height">
+    <input matInput placeholder="Height" type="any" formControlName="height"/>
+  </mat-form-field>
+
+  <mat-form-field class="weight">
+    <input matInput placeholder="Weight" type="any" formControlName="weight"/>
+  </mat-form-field>
+
+  <mat-form-field class="bmi">
+    <input matInput placeholder="BMI" type="any" formControlName="bmi"/>
+  </mat-form-field>
+
+  <mat-form-field class="bp">
+    <input matInput placeholder="BP" formControlName="bp" type="any"/>
+  </mat-form-field>
+
+
+  <img class="logo-icon" [src]="imgtop">
+  <input type="file" (change)=" serviceplaceheadsignatureChange($event)" #servicePlaceimgSignature hidden>
+
+  <button mat-raised-button class="example-containers">View Details</button>
+  <mat-form-field class="search">
+
+    <mat-select matNativeControl [disabled]="disableSelect.value" placeholder="Search By">
+      <option value="" selected></option>
+      <option value="saab" disabled>Saab</option>
+
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-container">
+    <button mat-button matPrefix mat-icon-button>
+    </button>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search Term"/>
+  </mat-form-field>
+
+  <button disabled class="md-fab" mat-mini-fab color="accent">
+    <mat-icon>search </mat-icon>
+  </button>
+
+  <mat-form-field class="doc">
+    <mat-select  placeholder="Doctor" formControlName="doctor">
+      <mat-option *ngFor="let doc of doctors" [value]="doc.id">{{doc.name}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="ward">
+    <input matInput placeholder="Consultation Room/Ward" />
+  </mat-form-field>
+
+  <mat-form-field class="bed">
+    <input matInput placeholder="Bed" type="number" />
+  </mat-form-field>
+
+  <mat-form-field class="date">
+    <input matInput [matDatepicker]="picker" [min]="minDate"  [max]="maxDate" placeholder="Consultation Date">
+    <mat-datepicker-toggle matSuffix [for]="picker" ></mat-datepicker-toggle>
+    <mat-datepicker   #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="review">
+    <mat-select placeholder="Review" formControlName="selectedRev">
+      <mat-option *ngFor="let r of review" [value]="r.value">{{r.viewValue}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="dates">
+    <input matInput [matDatepicker]="pickers" [min]="minDates"  [max]="maxDates" placeholder="Review Date">
+    <mat-datepicker-toggle matSuffix [for]="pickers"></mat-datepicker-toggle>
+    <mat-datepicker #pickers></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="time">
+    <input matInput [ngxTimepicker]="pickerss" placeholder="Review Time">
+    <ngx-material-timepicker #pickerss></ngx-material-timepicker>
+  </mat-form-field>
+
+  <mat-form-field class="general">
+    <textarea rows="1" matInput placeholder="General Remarks"></textarea>
+  </mat-form-field>
+</form>

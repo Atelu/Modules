@@ -1,0 +1,47 @@
+
+  <mat-form-field>
+    <mat-select placeholder="General Vital Signs" name="agc" [(ngModel)]="selectedValue">
+      <mat-option *ngFor="let gvs of vitalsigns" [value]="gvs.value">{{gvs.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div fxLayout="row" fxLayoutGap="5%">
+
+  <mat-form-field class= "search">
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Search" />
+  </mat-form-field>
+
+  <mat-paginator #paginator1 [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+</div>
+  <table mat-table [dataSource]="consultationSource" matSort>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Description
+      </th>
+      <td mat-cell *matCellDef="let user">{{user.description}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Measured Value">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Measured Value</th>
+      <td mat-cell *matCellDef="let user">{{user.measuredValue}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Remarks">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Remarks</th>
+      <td mat-cell *matCellDef="let user">
+        {{user.remarks}}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Date">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>
+        Date
+      </th>
+      <td mat-cell *matCellDef="let user">
+        {{user.date}}
+      </td>
+    </ng-container>
+  </table>

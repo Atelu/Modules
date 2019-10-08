@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+  border: 1px solid whitesmoke;
+}
+
+.logo-icon {
+
+  line-height: 2.2rem;
+  min-width: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+}
+
+.example-containerss  {
+  background-color: #006699;
+  font-size: 12px;
+  max-width: 78%;
+  max-height: 30px;
+  text-align: justify;
+  color: white;
+  padding: 0 6px 0 6px;
+  margin: 15px 15px 12px 10px;
+}
+.mat-card{
+  flex: 1 1 100%;
+  box-sizing: border-box;
+  max-width: 100%;
+
+}

@@ -1,0 +1,34 @@
+
+
+<mat-card class="mat-card">
+  <mat-card-header>Patient List </mat-card-header>
+  <mat-card-content>
+
+    <table  mat-table [dataSource]="consultsSource">
+      <!-- <tr mat-header-row *matHeaderRowDef="displaysColumn"></tr> -->
+      <tr mat-row *matRowDef="let row; columns: displaysColumn"></tr>
+
+      <ng-container matColumnDef="name">
+        <!-- <th mat-header-cell *matHeaderCellDef>
+              Name
+            </th> -->
+        <!-- src="assets/images/logo/test3.jpg" -->
+        <td mat-cell *matCellDef="let user">{{user.name}}
+          <div fxLayoutAlign="end center" fxLayoutGap="20%">
+            <div fxLayout="row" fxLayoutAlign="start center">
+              <div class="logo ml-12">
+                <img class="logo-icon"  [src]="sanitizer.bypassSecurityTrustResourceUrl(user.img)">
+              </div>
+            </div>
+            <div >
+              <button class="example-containerss"(click)="startConsultation()" mat-raised-button >Start Consultation</button>
+            </div>
+
+          </div>
+        </td>
+      </ng-container>
+
+    </table>
+
+  </mat-card-content>
+</mat-card>
